@@ -23,8 +23,6 @@ parser = parser$parse_args()
 
 count = fread(parser$input)
 count = as.matrix(count)
-pos   = which(colSums(count == 0) == 0)
-count = count[,pos]
 
 print(dim(count))
 print(sum(count==0))
